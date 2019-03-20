@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <title>Confirm | Forever21</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"9c9f87ac78","applicationID":"49422890","transactionName":"ZV1SNxNYXhJWWkVZClwXfTUiFnMJUlpafxBGe18NFUtfDVtcQx8mXVZWChNU","queueTime":0,"applicationTime":6,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta name="apple-itunes-app" content="app-id=365886172" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="Forever21">
+    <meta name="apple-mobile-web-app-title" content="Forever 21">
+    <meta name="Description" content="Forever21.com offers the most current fashions for women and men.  Shop Forever21.com and find the best selection of fashion tops, dresses, denim, shoes, accessories, jewelery, lingerie, 21 special items, and more!">
+    <meta name="Keywords" content="clothes, clothing, apparel, casual tops, dressy tops, basics, skirts, dress, dresses, sale, fashion, cheap, tees, tank tops, graphics, shirts, pants, jeans, shorts, sweaters, outerwear, jackets, tops, bottoms, skirts, shoes, halter, tube top, denim, jewelery, accessories, rings, necklaces, underwear, mens, womens, woman, junior fashion, xxi, forlove, gadzooks, womens apparel, intimate, handbags, sunglasses, hats, scarves, hair goods, earrings">
+    
+    <link rel="shortcut icon" href="https://www.forever21.com/images/en/common/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://www.forever21.com/images/en/common/apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="css/f21.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/f21_js.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.flex-modal.js"></script>
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT47CNH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="wishlist_overflow" class="bt_msg p_fixed ws_100 row bg_pink t_white t_bold txc pa_20" style="display:none">Maximum 40 items allowed</div>
+    <span class="scrollToTop t_bold"></span>
+    <!--Cookie S-->
+    <div class="cookie bg_black t_white" style="display:none;">
+        <div class="icon_close underline"><a href="javascript:fnClosePop_CookieNotice()">Close</a></div>
+        <p class="hp_subtitle t_white t_bold pb_10">Use of Cookies</p>
+        <p class="t_small">By navigating on the Forever 21 website, you agree to our use of cookies during your browsing experience. Learn more about our cookies policy <a data-modal-target="#privacy" class="underline">here </a>.</p>
+    </div>
+    <!--Cookie E-->
+    <!-- Mobile Left S -->
+    <div class="l_container hide_desktop">
+        <div class="nav_primary">
+            <div class="col_s_10_of_10 mobile_myaccount show_both">
+                <div class="col_s_7_of_10">
+                    <a href="/gl/Shop/Account/Signin">
+                        <span class="icon_signin" title="sign in"></span>
+                        <span>Hello<label id="m_left_username"></label></span>
+                    </a>
+                </div>
+                <div class="col_s_3_of_10 txr" id="div_m_left_sign_link">
+                    <!-- Sign In/Out Link -->
+                </div>
+            </div>
+        </div>
+        <nav>
+<div class="mega_menu">
+<span>WOMEN</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/women-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/women-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/dress">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/top_blouses">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/outerwear_coats-and-jackets">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/bottoms">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/intimates_loungewear">INTIMATES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/swimwear_all">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/activewear">ACTIVEWEAR</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_women">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="mega_menu">
+<span>ACCESSORIES</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_features">FEATURES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_jewelry">JEWELRY</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/shoes">SHOES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_handbags">BAGS + BELTS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_glasses">SUNGLASSES + READERS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_hat">HATS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_beauty">BEAUTY</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_hair">HAIR ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_legwear">SOCKS + TIGHTS</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_scarf-gloves">SCARVES + GLOVES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_home-and-gift-items">HOME + TECH</a></li>
+</ul></dd></dl></div></div></div>
+<div class="mega_menu">
+<span>PLUS + CURVE</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus-size-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-dresses">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-outerwear">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-intimates">INTIMATES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-swimwear">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-activewear">ACTIVEWEAR</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-shoes">SHOES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="mega_menu">
+<span>MEN</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-tees-tanks-graphic">GRAPHIC TEES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-jackets-and-coats">JACKETS + COATS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-bottom-swim">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-accessories">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-shoes">SHOES</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="mega_menu">
+<span>GIRLS</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_dresses-rompers">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_outerwear">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_accessories">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="mega_menu">
+<span>SALE</span>
+<div class="mega_sub"><div class="col_s_10_of_10">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_women">WOMEN</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_acc">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-sale">PLUS + CURVE</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-sale">MEN</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_sale">GIRLS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale-under-6">UNDER $6</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/promo-2for-deals">2 FOR $5</a></li>
+</ul></dd></dl></div></div></div>
+
+        </nav>
+        <!-- Second Menu S -->
+        <nav class="show_both">
+            <div class="mega_menu second_menu">
+                <span>COUNTRY : Global Shipping | USD ($)</span>
+                <!-- Submenu Option Left Start -->
+                <div class="mega_sub">
+                    <div class="col_s_10_of_10">
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li><a href="https://www.forever21.com/us/shop?changecountry=US">United States</a></li>
+                                    <li><a href="https://www.forever21.com/ca/shop?changecountry=CA">Canada</a></li>
+                                    <li><a href="http://www.forever21.com/MX/Product/Main.aspx?br=f21&changecountry=MX">Mexico</a></li>
+                                    <li><a href="https://www.forever21.com/eu/shop?lang=en&changecountry=EU">Europe</a></li>
+                                    <li><a href="https://www.forever21.com/uk/shop?changecountry=UK">United Kingdom</a></li>
+                                    <li><a href="http://www.forever21.co.jp?changecountry=JP">Japan</a></li>
+                                    <li><a href="http://www.forever21.co.kr?changecountry=KR">Korea</a></li>
+                                    <li><a href="http://www.forever21.cn?changecountry=CN">China</a></li>
+                                    <li><a href="http://www.forever21.com/IN/Product/Main.aspx?br=f21&changecountry=IN">India</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- Submenu Option Left End -->
+            </div>
+            <div class="mega_menu second_menu">
+                <span>LANGUAGE : <label id="current_language_m_left">ENGLISH</label></span>
+                <!-- Submenu Option Left Start -->
+                <div class="mega_sub">
+                    <div class="col_s_10_of_10">
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li><a href="#" onclick="fnChangeLanguage('en-US'); return false;">English</a></li>
+                                    <li><a href="#" onclick="fnChangeLanguage('ko-KR'); return false;">Korean</a></li>
+                                    <li><a href="#" onclick="fnChangeLanguage('zh-TW'); return false;">Chinese</a></li>
+                                    <li><a href="#" onclick="fnChangeLanguage('ja-JP'); return false;">Japanese</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- Submenu Option Left End -->
+            </div>
+            <div class="mega_menu second_menu"><span><a href="/gl/Shop/Account/TrackOrder">TRACK ORDER</a></span></div>
+            <div class="mega_menu second_menu">
+                <span>HELP</span>
+                <div class="mega_sub">
+                    <div class="col_s_10_of_10">
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li><a href="/gl/Shop/Info/FAQ">FAQ</a></li>
+                                    <li><a href="/gl/Shop/Info/ReturnsInfo">Returns</a></li>
+                                    <li><a href="/gl/Shop/Info/ShippingInfo">Shipping Info</a></li>
+                                    <li><a href="/gl/Shop/Info/PaymentPrices">Payment &amp; Prices</a></li>
+                                    <li><a href="/gl/Shop/Info/PrivacyPolicy">Privacy Policy</a></li>
+                                    <li><a href="/gl/Shop/Info/Terms">Terms &amp; Conditions</a></li>
+                                    <li><a href="/gl/Shop/Info/ContactUs/">Contact Us</a></li>
+                                    <li><a href="/gl/Shop/Info/SizeGuide/">Size Guide</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="mega_menu second_menu"><span><a href="/gl/Shop/Info/FindStore">FIND A STORE</a></span></div>
+        </nav>
+        <!-- Second Menu E -->
+    </div>
+    <!-- Mobile Left E -->
+    <!-- Email Signup Popup Start -->
+    
+<div id="signup_popup_container" class="signup_wrapper" style="display: none;">
+    <div class="signup_slider pa_20 ws_100 row">
+        <span class="icon_close" onclick="fnCloseOptInPopUp(); return false;"></span>
+        <!-- Sign Up S -->
+        <div id="welcome_signup" class="col_s_10_of_10 col_m_12_of_12 col_l_12_of_16 wmx_1200 fc txcl">
+            <div class="col_s_10_of_10 col_m_6_of_12 fl txcr pa_10 pt_5 pb_0">
+                <p class="signup_title t_trade pb_5">OH, HEYYY! GET <span class="t_pink">10%OFF</span></p>
+                <p class="pb_0 t_mid">Sign up for exclusive updates, new arrivals, events, contests, and more!</p>
+            </div>
+            <div class="col_s_10_of_10 col_m_6_of_12 fl txcl pa_10">
+                <form id="form_welcome_popup">
+                    <fieldset class="f_form m_f_form">
+                        <div class="input_label">
+                            <label>Enter Email Address</label>
+                            <button type="button" class="bg_black ws_20 round_nl" onclick="fnVaildEmailCheck();">Join</button>
+                            <input type="email" class="ws_80 round_nr" id="welcome_input_email" name="welcome_input_email" MaxLength="40" onkeypress="fnOnKeyPressSubmit(event, fnVaildEmailCheck)">
+                            <p id="welcome_signup_tooltip" class="tooltip pa_0" style="display: none;"></p>
+                        </div>
+                    </fieldset>
+                    <p class="t_res t_gray">By clicking join, you agree to our <a data-modal-target="#terms" class="underline">Terms</a> and acknowledge you have read our <a data-modal-target="#privacy" class="underline">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+        <!-- Sign Up E -->
+        <!-- Thank you S -->
+        <div id="welcome_thank" class="ws_100 row txc" style="display: none;">
+            <div class="ws_100 row">
+                <span class="signup_title t_trade">THANKS FOR JOINING!<br />THE <span class="t_pink">OFFER</span> IS ON ITS WAY!</span>
+                <p class="pb_10 t_gray t_small">Please check your email!</p>
+            </div>
+        </div>
+        <!-- Thank you E -->
+    </div>
+</div>
+<div class="blockclick show_mobile" style="display: none;"></div>    <!-- Email Signup Popup End -->
+    <!-- Loading S -->
+    <div class="loading" style="display:none;"><span><img src="/gl/Shop/_common/images/loading.gif"></span></div>
+    <!-- Loading E -->
+    
+    <!-- Right Slider S -->
+    <div class="desktop_overlay"></div>
+
+    <div class="r_container">
+    </div>
+
+    <!-- Message Pop S -->
+    <div id="message_pop" class="flex-modal-hide">
+        <div class="fc col_s_10_10 col_m_6_of_12 col_l_5_of_16">
+        <button class="quick_close" type="button"></button>
+            <div class="container row pa_10">
+                <p class="p_title"><strong>Cancel order</strong></p>
+                <p class="p_content">Are you sure you want to cancel this order?</p>
+                <div class="ws_100 txc pt_10">
+                    <button type="button" style="" id="btn_ok" class="bg_yellow btn_small">YES</button><span class="pr_10"></span>
+                    <button type="button" style="" id="btn_cancel" class="bg_black btn_small">NO</button>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- Message Pop E -->
+    <div class="c_container">
+        <div class="mobile_overlay"></div>
+        <header>
+            <!-- Pre Header Start -->
+
+<!-- Desktop Preheader Menu S -->
+<div class="pre_header bg_black row col_s_10_of_10 col_m_12_of_12 col_l_16_of_16">
+	<!-- Global Bar S -->
+	<div class="col_s_10_of_10 col_m_12_of_12 col_l_9_of_16 g_bar" id="globalbar" style="display:block;">
+    <p class="show_desktop txcl"><a data-modal-target="#krfreeship_disclaimer">KRFREESHIPCONTENTS</a></p><p class="show_mobile txcl"><a data-modal-target="#krfreeship_disclaimer">KRFREESHIPCONTENTS</a></p>
+    </div>
+	<!-- Global Bar E -->
+	<!-- Desktop Secondary Menu S -->
+	<div class="second_nav_container fr show_desktop">
+		<span id="w_header_status_area"><a href="/gl/Shop/Account/SignIn">SIGN IN</a></span>
+		<span class="t_wishlist"><a href="/gl/Shop/Account/WishList">WISHLIST<span class="t_pink">(<span class="WishlistCountHeader"></span>)</span></a></span>
+		<span class="t_cart"><a href="/gl/Shop/Checkout/Basket">CART<span class="t_pink">(<span class="BasketCountHeader"></span>)</span></a>
+			<div id="CartPopupArea"></div>
+		</span>
+	</div>
+	<!-- Desktop Secondary Menu E -->
+</div>
+<!-- Desktop Preheader E -->
+<!-- Mobile Header S -->
+<div class="m_header row col_s_10_of_10 show_both txc">
+	<div class="f21_logo"><a href="/gl/Shop/"><span class="logo left"></span></a></div>
+	<!-- Secondary Menu for Mobile S -->
+	<div class="nav_secondary">
+		<div><span class="icon_menu"></span></div>
+		<div><span class="icon_search"></span></div>
+	</div>
+	<!-- Secondary Menu for Mobile E -->
+	<!-- Secondary Menu S -->
+	<div class="nav_secondary right">
+		<div class="t_wishlist"><a href="/gl/Shop/Account/WishList"><span class="top_count WishlistCountHeader"></span><span class="icon_wishlist"></span></a></div>
+		<div class="t_cart"><a href="/gl/Shop/Checkout/Basket"><span class="top_count BasketCountHeader"></span><span class="icon_cart"></span></a></div>
+	</div>
+	<!-- Mobile Search S -->
+	<div class="m_search_container">
+		<fieldset>
+			<span class="icon_close"></span>
+			<label for="q" class="hide">Search</label>
+			<input tabindex="1" type="text" id="ihKeyword_mobile" name="q" autocomplete="off" class="add_icon p_relative" placeholder="Search Products" autofocus onkeypress="fnOnKeyPressSubmit(event, fnSearch)">
+		</fieldset>
+	</div>
+	<!-- Mobile Search E -->
+</div>
+<!-- Mobile Header E -->
+
+<!-- Desktop Header S -->
+<div class="d_header row col_l_16_of_16 show_desktop txc">
+	<!-- Global Bar S -->
+	<div class="col_l_5_of_16 fl pre_header float">
+		<div class="inline country_wrapper fl">
+			<span class="hover_p"><span class="arrow_down">Global Shipping | USD ($)</span>
+				<!-- Top Submenu Start -->
+				<div class="hover_c top_sub">
+					<dl>
+				        <dd><a href="https://www.forever21.com/us/shop?changecountry=US">United States</a></dd>
+				        <dd><a href="https://www.forever21.com/ca/shop?changecountry=CA">Canada</a></dd>
+				        <dd><a href="http://www.forever21.com/MX/Product/Main.aspx?br=f21&changecountry=MX">Mexico</a></dd>
+				        <dd><a href="https://www.forever21.com/eu/shop?lang=en&changecountry=EU">Europe</a></dd>
+				        <dd><a href="https://www.forever21.com/uk/shop?changecountry=UK">United Kingdom</a></dd>
+				        <dd><a href="http://www.forever21.co.jp?changecountry=JP">Japan</a></dd>
+				        <dd><a href="http://www.forever21.co.kr?changecountry=KR">Korea</a></dd>
+				        <dd><a href="http://www.forever21.cn?changecountry=CN">China</a></dd>
+				        <dd><a href="http://www.forever21.com/IN/Product/Main.aspx?br=f21&changecountry=IN">India</a></dd>
+					</dl>
+				</div>
+				<!-- Top Submenu End -->
+			</span>
+			<span class="hover_p"><span id="current_language_header" class="arrow_down">English</span>
+				<!-- Top Submenu Start -->
+				<div class="hover_c top_sub right_5">
+					<dl>
+				        <dd><span onclick="javascript:fnChangeLanguage('en-US'); return false;">English</span></dd>
+				        <dd><span onclick="javascript:fnChangeLanguage('ko-KR'); return false;">Korean</span></dd>
+				        <dd><span onclick="javascript:fnChangeLanguage('zh-TW'); return false;">Chinese</span></dd>
+                        <dd><span onclick="javascript:fnChangeLanguage('ja-JP'); return false;">Japanese</span></dd>
+					</dl>
+				</div>
+				<!-- Top Submenu End -->
+			</span>
+		</div>
+	</div>
+	<!-- Global Bar E -->
+
+	<div class="f21_logo"><a href="/gl/Shop/"><span class="logo left"></span></a></div>
+
+
+	<div class="col_l_5_of_16 fr txr">
+		<!-- Search S -->
+		<div class="inline bg_light_gray">
+			<div class="in_block pl_10">
+				<fieldset>
+					<label for="q" class="hide">search</label>
+					<input tabindex="1" type="text" name="q" id="ihKeyword" autocomplete="off" name="Search" class="add_icon s_rt" placeholder="Search Products" onkeypress="fnOnKeyPressSubmit(event, fnSearch)">
+				</fieldset>
+			</div>
+		</div>
+		<!-- Search E -->
+	</div>
+	<!-- Desktop Primary Menu S -->
+	<div class="nav_primary center">
+        <div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/f21/app-main">WOMEN</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/women-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/women-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/dress">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/top_blouses">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/outerwear_coats-and-jackets">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/bottoms">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/intimates_loungewear">INTIMATES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/swimwear_all">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/activewear">ACTIVEWEAR</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_women">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/f21/acc">ACCESSORIES</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_features">FEATURES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_jewelry">JEWELRY</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/shoes">SHOES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_handbags">BAGS + BELTS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_glasses">SUNGLASSES + READERS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_hat">HATS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_beauty">BEAUTY</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_hair">HAIR ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_legwear">SOCKS + TIGHTS</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_scarf-gloves">SCARVES + GLOVES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/acc_home-and-gift-items">HOME + TECH</a></li>
+</ul></dd></dl></div></div></div>
+<div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/plus/plus_size-main">PLUS + CURVE</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus-size-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-dresses">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-outerwear">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-intimates">INTIMATES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-swimwear">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-activewear">ACTIVEWEAR</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-shoes">SHOES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/21men/mens-main">MEN</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-tees-tanks-graphic">GRAPHIC TEES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-jackets-and-coats">JACKETS + COATS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-bottom-swim">SWIM</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-accessories">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-shoes">SHOES</a></li>
+</ul><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/girls/girls_main">GIRLS</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_features">WANT LIST</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls-new-arrivals">NEW ARRIVALS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_dresses-rompers">DRESSES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_tops">TOPS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_outerwear">JACKETS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_bottom">BOTTOMS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_accessories">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_sale">SALE</a></li>
+</ul></dd></dl></div></div></div>
+<div class="d_mega_menu hover_p">
+<a href="/gl/Shop/Catalog/Category/f21/sale">SALE</a>
+<div class="d_mega_sub hover_c"><div class="col_l_16_of_16">
+<dl><dd><ul>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_women">WOMEN</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale_acc">ACCESSORIES</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/plus/plus_size-sale">PLUS + CURVE</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/21men/mens-sale">MEN</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/girls/girls_sale">GIRLS</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/sale-under-6">UNDER $6</a></li>
+<li><a class='block' href="/gl/Shop/Catalog/Category/f21/promo-2for-deals">2 FOR $5</a></li>
+</ul></dd></dl></div></div></div>
+
+	</div>
+	<!-- Desktop Primary Menu E -->
+</div>
+<!-- Desktop Header E -->
+<!-- Auto Suggestion Start -->
+<div class="search_suggestion">
+	<!-- Suggestion List Start -->
+	<div class="row col_m_12_of_12 col_l_16_of_16 search_suggestion">
+	    
+    </div>
+	<!-- Suggestion List End -->
+</div>
+<!-- Auto Suggestion End -->
+            <!-- Pre Header End -->
+        </header>
+        <main role="main">
+            
+
+
+
+
+
+
+<div id="main">
+    <!-- Category List S -->
+    <div id="orderConfirm" class="container con_container regular_container">
+        <!-- Right Side S -->
+        <div class="container c_content txc">
+            <!-- Content Container S -->
+            <div class="container row myaccount">
+                <!-- Order Details S -->
+                <div class="col_s_10_of_10 mb_10">
+                    <div class="container row pt_20 pb_20">
+                        <!-- Order Items S -->
+                        <div class="container b_gray row mb_10">
+                            <div class="bg_light_gray pa_10 ttl_header t_bold row container mb_10">
+                                <span>THANK YOU FOR YOUR ORDER</span>
+                                <p class="pt_10 t_normal t_small">Your order confirmation email is on its way, please check your inbox.</p>
+                            </div>
+                            <div class="container pa_10 row">
+                                <div class="txl col_s_10_of_10 col_m_3_of_12 col_l_4_of_16 pl_10 pr_10 vt pb_10 t_small fr">
+                                    <ul class="bb_gray pb_10">
+                                        <li><strong>Order # : 20034214</strong></li>
+                                        <li id="totalAndItemCount">Total : {0} item(s) / {1}</li>
+                                    </ul>
+                                    <ul class="bb_gray pb_10 pt_10">
+                                        <li class="t_bold">Shipping Address</li>
+                                        <li id="shippingAddressInfo"></li>
+                                    </ul>
+                                    <ul class="bb_gray pb_10 pt_10">
+                                        <li class="t_bold">Payment</li>
+                                        <li id="paymentMethod">Visa ending in 7890</li>
+                                    </ul>
+                                    <!-- Summary S -->
+                                    <div class="container pt_10">
+                                        <div class="summary pb_10 clearfix">
+                                            <p class="t_bold">Order summary</p>
+                                            <ul class="col_s_5_of_5 fl">
+                                                <li>Subtotal</li>
+                                                <li>Discount</li>
+                                                <li>Estimate duties &amp; Taxes</li>
+                                                <li>Shipping</li>
+                                                <li style="display:none">Gift Card</li>
+                                                <li class="t_bold">TOTAL</li>
+                                            </ul>
+                                            <ul class="col_s_5_of_5 txr">
+                                                <li id="subtotal">$0.00</li>
+                                                <li id="discount" class="t_pink">-$0.00</li>
+                                                <li id="taxTotal">$0.00</li>
+                                                <li id="shippingTotal">Free</li>
+                                                <li style="display:none" class="t_pink">-$0.00</li>
+                                                <li id="orderTotal" class="t_bold ttl_header">$0.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Summary E -->
+
+                                    <p class="pt_10 pb_10 ws_100"><button onclick="location.href='/GL/Shop/'" class="outline_yellow ws_100">CONTINUE SHOPPING</button></p>
+                                    <p class="pb_10 ws_100"><button data-modal-target="#message_pop" class="outline_pink ws_100">CANCEL ORDER</button></p>
+                                    <p class="container row txc pa_10 bg_light_gray mb_10">* You can cancel this order within 1 hour.</p>
+                                </div>
+                                <div id="divLineItem" class="col_s_10_of_10 col_m_9_of_12 col_l_12_of_16 pl_10 vt pr_10 row_2 fr">
+                                    <!-- Item S -->
+                                    <div class="pi_wrapper">
+                                        <div class="p_item col_s_3_of_10">
+                                            <a href="#"><img src="https://www.forever21.com/images/default_330/00282116-05.jpg"></a>
+                                        </div>
+                                        <div class="col_s_7_of_10 pl_10">
+                                            <!-- Product Name S -->
+                                            <div class="col_s_10_of_10">
+                                                <p class="p_name">Striped Ribbed Mock Neck Tee</p>
+                                                <p class="p_price pb_10">USD $10.90</p>
+                                                <div class="pt_10">
+                                                    <p>Color : CREAM/BLACK</p>
+                                                    <p>Size : Medium</p>
+                                                    <p>Qty : 1</p>
+                                                </div>
+                                            </div>
+                                            <!-- Product Name E -->
+                                        </div>
+                                    </div>
+                                    <!-- Item E -->
+                                    <!-- Item S -->
+                                    <div class="pi_wrapper">
+                                        <div class="p_item col_s_3_of_10">
+                                            <a href="#"><img src="https://www.forever21.com/images/default_330/00282116-05.jpg"></a>
+                                        </div>
+                                        <div class="col_s_7_of_10 pl_10">
+                                            <!-- Product Name S -->
+                                            <div class="col_s_10_of_10">
+                                                <p class="p_name">Striped Ribbed Mock Neck Tee</p>
+                                                <p class="p_price pb_10">USD $10.90</p>
+                                                <div class="pt_10">
+                                                    <p>Color : CREAM/BLACK</p>
+                                                    <p>Size : Medium</p>
+                                                    <p>Qty : 1</p>
+                                                </div>
+                                            </div>
+                                            <!-- Product Name E -->
+                                        </div>
+                                    </div>
+                                    <!-- Item E -->
+                                    <!-- Item S -->
+                                    <div class="pi_wrapper">
+                                        <div class="p_item col_s_3_of_10">
+                                            <a href="#"><img src="https://www.forever21.com/images/default_330/00282116-05.jpg"></a>
+                                        </div>
+                                        <div class="col_s_7_of_10 pl_10">
+                                            <!-- Product Name S -->
+                                            <div class="col_s_10_of_10">
+                                                <p class="p_name">Striped Ribbed Mock Neck Tee</p>
+                                                <p class="p_price pb_10">USD $10.90</p>
+                                                <div class="pt_10">
+                                                    <p>Color : CREAM/BLACK</p>
+                                                    <p>Size : Medium</p>
+                                                    <p>Qty : 1</p>
+                                                </div>
+                                            </div>
+                                            <!-- Product Name E -->
+                                        </div>
+                                    </div>
+                                    <!-- Item E -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Order Items E -->
+                    </div>
+                </div>
+                <!-- Order Details E -->
+            </div>
+            <!-- Content Container E -->
+        </div>
+        <!-- Right Side E -->
+    </div>
+    <!-- Category List E -->
+</div>
+        </main>
+        <footer class="bg_light_gray">
+            <!-- Footer S -->
+            <div class="container row">
+                <!-- Subscribe S -->
+                <div class="col_s_9_of_10 col_m_10_of_16 fc txc">
+                    <div class="subscription">
+                        <p class="hp_title">Fear of missing out?</p>
+                        <p class="show_desktop hp_subtitle pt_10">Be the first to know about the latest deals, style updates &amp; more!</p>
+                        <h5 class="hp_subtitle show_mobile pt_10">Sign up and be the first to know!</h5>
+                        <div class="col_s_10_10 col_m_8_of_12 col_l_8_of_16 wmx_500 fc pt_10">
+                            <form id="form_footer_subscribe">
+                                <fieldset class="f_form m_f_form">
+                                    <div class="input_label">
+                                        <label>EMAIL ADDRESS</label>
+                                        <button type="button" class="bg_black round_nl" onclick="fnGoFooterSubscribe();">JOIN</button>
+                                        <input type="email" class="round_nr" id="txt_footer_subscribe" name="txt_footer_subscribe" MaxLength="40" onkeypress="fnOnKeyPressSubmit(event, fnGoFooterSubscribe)">
+                                    </div>
+                                </fieldset>
+                                <p class="t_res t_gray pt_10">By clicking join, I accept the <a data-modal-target="#privacy" class="underline">Privacy Policy</a> and <a data-modal-target="#terms" class="underline">Terms &amp; Conditions</a>. You may unsubscribe at any time.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Subscribe E -->
+                <!-- Footer Navigation S -->
+                <div class="show_desktop">
+                    <div class="col_m_10_of_12 fc txc">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>Company Info</dt>
+                                    <dd><a href="/gl/Shop/Info/AboutUs">About Us</a></dd>
+                                    <dd><a href="/gl/Shop/Info/FindStore">Find a Store</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Help</dt>
+                                    <dd><a href="/gl/Shop/Info/ContactUs">Contact Us</a></dd>
+                                    <dd><a href="/gl/Shop/Account/TrackOrder">Track Order</a></dd>
+                                    <dd><a href="/gl/Shop/Info/ShippingInfo">Shipping Info</a></dd>
+                                    <dd><a href="/gl/Shop/Info/ReturnsInfo">Returns</a></dd>
+                                    <dd><a href="/gl/Shop/Info/SizeGuide">Size Guide</a></dd>
+                                    <dd><a href="/gl/Shop/Info/FAQ">FAQ</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Quick Links</dt>
+                                    <dd><a href="/gl/Shop/Info/PrivacyPolicy">Privacy Policy</a></dd>
+                                    <dd><a href="/gl/Shop/Info/Terms">Terms &amp; Conditions</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer Navigation E -->
+                <!-- Footer Social S -->
+                <div class="col_s_10_of_10 social_container">
+                    <span><a href="https://www.instagram.com/forever21/" target="_blank"><span class="fs_instagram"></span></a></span>
+                    <span><a href="https://www.facebook.com/Forever21" target="_blank"><span class="fs_facebook"></span></a></span>
+                    <span><a href="https://twitter.com/Forever21" target="_blank"><span class="fs_twitter"></span></a></span>
+                    <span><a href="https://www.youtube.com/user/Forever21Inc" target="_blank"><span class="fs_youtube"></span></a></span>
+                    <span><a href="https://www.pinterest.com/forever21/" target="_blank"><span class="fs_pinterest"></span></a></span>
+                    
+                    <!-- App Icon S -->
+                    <span class="show_desktop"><a href="https://itunes.apple.com/us/app/forever-21/id365886172?mt=8" target="_blank"><span class="fa_ios"></span></a></span>
+                    
+                    <!-- App Icon E -->
+                </div>
+                <!-- Footer Social E -->
+                <div class="col_s_10_of_10 txc t_res">
+                    <p>Forever21 Asia Holdings, LTD.</p>
+                    <p>
+                        ©
+                        <script>document.write((new Date()).getFullYear());</script>Forever21.inc All rights reserved.
+                    </p>
+                </div>
+                <!-- Footer Social E -->
+            </div>
+            <!-- Footer S -->
+        </footer>
+    </div>
+    <!-- Privacy Popup S-->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#privacypolicy_popup_contents').load(SITE_PREFIX + '/' + STATICFILELOCATION + '/templates/info/'+ getCurrentLanguage() +'/privacypolicy_popup.html');
+    });
+</script>
+<div id="privacy" class="flex-modal-hide">
+    <div class="fc col_s_10_of_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div id="privacypolicy_popup_contents" class="container row pa_10">
+        </div>
+    </div>
+</div>
+
+    <!-- Privacy Popup E-->
+    <!-- Terms Popup S-->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#terms_popup_contents').load(SITE_PREFIX + '/' + STATICFILELOCATION + '/templates/info/'+ getCurrentLanguage() +'/terms_popup.html');
+    });
+</script>
+
+<div id="terms" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div id="terms_popup_contents"class="container row pa_10">
+        </div>
+    </div>
+</div>
+
+    <!-- Terms Popup E-->
+    <!-- Hompage Disclaimer Popup S-->
+    <!-- AU Free Shipping Popup S -->
+<div id="aufreeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            <p class="p_content">Australia free standard shipping is valid on online purchases of $100(USD) or more in the same order. Free shipping is valid online only at Forever21 Global store. Taxes, and prior purchases do not qualify toward the minimum purchase requirement. Free shipping is valid for Australian standard ground shipping within the Australian mainland and Tasmania. Free shipping is applied at checkout for purchases over $100. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify shipping fee at any time without notice. The return shipping fee of $20.00 will be charged.</p>
+        </div>
+    </div>
+</div>
+<!-- AU Free Shipping Popup E -->
+<!-- NZ Free Shipping Popup S -->
+<div id="nzfreeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            <p class="p_content">New Zealand free standard shipping is valid on online purchases of $75(USD) or more in the same order. Free shipping is valid online only at Forever21 Global store. Taxes, and prior purchases do not qualify toward the minimum purchase requirement. Free shipping is valid for New Zealand shipping. Free shipping is applied at checkout for purchases over $75.00. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify shipping fee at any time without notice. The return shipping fee of $20.00 will be charged.</p>
+        </div>
+    </div>
+</div>
+<!-- NZ Free Shipping Popup E -->
+<!-- KR Free Shipping Popup S -->
+<div id="krfreeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            <p class="p_content">Free standard shipping is valid on online purchases of $50.00(USD) or more in the same order. Free shipping is valid online only at Forever21 Global store. Taxes, and prior purchases do not qualify toward the minimum purchase requirement. Free shipping is applied at checkout for purchases over $50.00. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify shipping fee at any time without notice. The return shipping fee of $15.00 will be charged.</p>
+        </div>
+    </div>
+</div>
+<!-- KR Free Shipping Popup E -->
+<!-- SG Free Shipping Popup S -->
+<div id="sgfreeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            
+            <p class="p_content">Free standard shipping is valid on online purchases of $100.00(USD) or more in the same order. Free shipping is valid online only at Forever21 Global store. Taxes, and prior purchases do not qualify toward the minimum purchase requirement. Free shipping is applied at checkout for purchases over $100.00. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify shipping fee at any time without notice. The return shipping fee of $20.00 will be charged.</p>
+        </div>
+    </div>
+</div>
+<!-- SG Free Shipping Popup E -->
+<!-- PH Free Shipping Popup S -->
+<div id="phfreeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            
+            <p class="p_content">Philippines free standard shipping is valid on online purchases of $100.00(USD) or more in the same order. Free shipping is valid online only at Forever21 Global store. Taxes, and prior purchases do not qualify toward the minimum purchase requirement. Free shipping is valid for Philippines shipping. Free shipping is applied at checkout for purchases over $100.00. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify shipping fee at any time without notice. The return shipping fee of $20.00 will be charged.</p>
+        </div>
+    </div>
+</div>
+<!-- PH Free Shipping Popup E -->
+<!-- 2017BK Popup S -->
+<div id="2017bk_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            
+            <p class="p_content">Receive 21% off on all regular items  when you spend $50 or more at Forever21 Global store from November 24, 2017 8:00 am HKT through November 27, 2017 8:00 am HKT. Minimum purchase amount must be met in a single transaction before taxes or shipping charges.  Offer valid online exclusively on all regular items. To redeem online, enter code 2017BK at checkout. Offer cannot be combined with any other coupons, discounts, offers, or promotions. In-store prices may vary and may differ from online prices. Offer is not transferable and not valid for cash or cash equivalent. No adjustments on previous purchases. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify or cancel this promotion at any time without notice.</p>
+        </div>
+    </div>
+</div>
+<!-- 2017BK Popup E -->
+<!-- 2018 Late Delivery Popup S -->
+<div id="latedelivery_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            
+            <p class="p_content"><span class="t_bold">Late Delivery Notice</span><br>
+Please kindly excuse shipment will be released from February 22th due to the national holiday in China which our warehouse is placed. To express our gratitude of your patience, we are offering promo code that can be redeemable during the period of shipping delay. <br>Hope you to enjoy shopping at Forever 21 website. Don’t miss the promo code!<br><br>
+
+<span class="t_bold">Last Shipping Date</span><br>
+Taiwan : February 9<br>
+Korea, Japan, SE Asia : February 11<br>
+Australia, New Zealand : February 13<br><br>
+
+<span class="t_bold">Buy and Save Promotion</span><br>
+Offer valid online only at forever21.com/gl  from February 13, 2018 8:00 am HKT through February 21, 2018 8:00 am HKT. To redeem online, enter code SAVE10 for 10% off purchases of $100+; SAVE15 for 15% off purchases of $150+; or SAVE20 for 20% off purchases of $200+ at checkout page. Limit one code per order. You must be logged into your Forever 21 account with the email address where you received this offer. Offer cannot be combined with any other coupons, discounts, offers, or promotions. Offer not valid on the purchase of sale items, applicable taxes, or shipping and handling charges. Offer is not transferable and not valid for cash or cash equivalent. No adjustments on previous purchases. Items marked “Final Sale” cannot be returned or exchanged. Returns and exchanges are subject to Forever 21’s return policy. Nothing stated herein will affect customers’ legal rights. Forever 21 reserves the right to modify or cancel this promotion at any time without notice.</p>
+        </div>
+    </div>
+</div>
+<!-- 2018 Late Delivery E -->
+<!-- 2018 Mothers day Popup S -->
+<div id="mothersday_freeship_disclaimer" class="flex-modal-hide">
+    <div class="fc col_s_10_10 col_m_8_of_12 col_l_7_of_16">
+        <button class="quick_close" type="button"></button>
+        <div class="pa_20">
+            <p class="p_title">FREE SHIPPING ON ORDERS OVER $60</p>
+            <p class="p_content">Receive free standard shipping on your online purchase of $60(USD) or more at forever21.com/gl/shop on May 13, 2018 08:00am HKT through May 15, 2018 08:00am HKT. Gift cards, e-gift cards, packaging, taxes, and prior purchases do not qualify toward the minimum purchase requirement and offer cannot be applied to such items. Valid on standard ground shipping only. If you choose another shipping option, additional charges may apply. No adjustments on previous purchases. If you change your mind about a purchase and want to return it, you may be required to pay the return shipping costs. Forever 21 reserves the right to modify or cancel this promotion at any time without notice.
+</p>
+        </div>
+	<div class="pa_20">
+            <p class="p_title">SHIPPING DESTINATIONS</p>
+            <p class="p_content">Hong Kong, Japan, Korea, Taiwan, Singapore, Australia, Indonesia, Malaysia, New Zealand, Philippines</p>
+        </div>
+    </div>
+</div>
+<!-- 2018 Mothers day E -->
+    <!-- Hompage Disclaimer Popup E-->
+    <script type="text/javascript" src="/gl/Shop/_common/2018071701/js/resxclsa.js"></script>"
+    <script type="text/javascript" src="/gl/Shop/_common/2018071701/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="/gl/Shop/_common/2018071701/js/jsrender.js"></script>
+    <script type="text/javascript" src="/gl/Shop/_common/2018071701/js/account/subscribe.js"></script>
+    
+    <script type="text/javascript" src="/gl/Shop/_common/2018071701/js/checkout/confirm.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.orderConfirm.loadOrder($("#orderConfirm"), fnGetUserId(), 20034214);
+        });
+
+        var fnClickCancelOrder = function (orderNumber) {
+            $.cancelOrder(orderNumber);
+        }
+    </script>
+
+    <!-- 863669-ASPRECW2 -->
+    <!-- akamai edgescape S -->
+    <!--georegion=118,country_code=KR,city=SEOUL,lat=37.57,long=127.00,timezone=GMT+9,continent=AS,throughput=vhigh,bw=5000,asnum=3786,location_id=0-->
+    <!-- akamai edgescape E -->
+    <input id="akamai" type="hidden" value="georegion=118,country_code=KR,city=SEOUL,lat=37.57,long=127.00,timezone=GMT+9,continent=AS,throughput=vhigh,bw=5000,asnum=3786,location_id=0"/>
+</body>
+</html>
