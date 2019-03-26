@@ -1,4 +1,10 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*
+* Forever21 v1.1.1 03/25/2019
+* Copyright Forever21 HK
+* Created by namhee kim
+*/
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -642,6 +648,9 @@ div[class^="hp_"] {
 }
 .bg_pink {
   background: #ef5f96
+}
+.bg_red {
+  background: red;
 }
 .bg_gray {
   background: #727272
@@ -4498,8 +4507,3 @@ button.paypal img {
   margin-top: 0
 }
 
-/*
-* Forever21 v1.1.1 01/24/2019
-* Copyright Forever21 HK
-* Created by namhee kim
-*/
