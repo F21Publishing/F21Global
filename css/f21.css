@@ -1,6 +1,6 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /*
-* Forever21 v1.1.1 03/25/2019
+* Forever21 v1.1.1 04/26/2019
 * Copyright Forever21 HK
 * Created by namhee kim
 */
@@ -2021,7 +2021,10 @@ span[class^="c_card_"] {
   background: url(https://www.forever21.com/images/f21/us/icon_card_paypal.svg) no-repeat center left;
 }
 .c_card_visa {
-    background: url(https://www.forever21.com/images/f21/us/icon_card_visa.svg) no-repeat center left;
+  background: url(https://www.forever21.com/images/f21/us/icon_card_visa.svg) no-repeat center left;
+}
+.c_card_master {
+  background: url(https://www.forever21.com/images/f21/us/icon_card_master.svg) no-repeat center left;
 }
 button {
   padding: .8em 1em;
